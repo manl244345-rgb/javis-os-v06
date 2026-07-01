@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "JAVIS OS",
+    "slug": "javis-os-v06",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "javisos",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "JAVIS needs your microphone for voice commands.",
+        "NSSpeechRecognitionUsageDescription": "JAVIS uses speech recognition for voice input."
+      }
+    },
+    "android": {
+      "backgroundColor": "#000000",
+      "package": "com.javis.os.v06",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.READ_CONTACTS",
+        "android.permission.CALL_PHONE",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://javis-os.app"
+        }
+      ],
+      "expo-font",
+      "expo-av",
+      "expo-contacts"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2c5efa6f-9a34-4e74-8576-5101cd316692"
+      }
+    }
+  }
+}
